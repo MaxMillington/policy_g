@@ -1,0 +1,21 @@
+body {
+    padding-top: 50px;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+}
+
+.image-bg-fluid-height,
+.image-bg-fixed-height {
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.image-bg-fluid-height {
+    background: url('http://img.jpm.cn/201506/25/145445hly22qr0zii6v4ou.png') no-repeat center center scroll;
+    padding: 100px 0;
+    background-size: cover;
+    height: 700px;
+    margin: auto
+}

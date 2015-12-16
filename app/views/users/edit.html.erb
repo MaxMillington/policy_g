@@ -4,13 +4,16 @@
       <h1>How much life insurance do you need?</h1>
       <%= form_for(@user) do |f| %>
 
-          <%= f.label :total_annual_income %>
+          <%= f.label :total_annual_income %><a href="#" target="_blank", data-toggle="modal", data-target="#photo-1",
+                                                class="btn-social btn-outline"><i class="fa fa-fw fa-question-circle"></i></a>
           <%= f.number_field :total_annual_income, prepend: "$", class: 'form-control' %>
 
-          <%= f.label :savings %>
+          <%= f.label :savings %><a href="#" target="_blank", data-toggle="modal", data-target="#photo-2",
+                                    class="btn-social btn-outline"><i class="fa fa-fw fa-question-circle"></i></a>
           <%= f.number_field :savings, prepend: "$", class: 'form-control' %>
 
-          <%= f.label :saved_for_retirement %>
+          <%= f.label :saved_for_retirement %><a href="#" target="_blank", data-toggle="modal", data-target="#photo-3",
+                                                 class="btn-social btn-outline"><i class="fa fa-fw fa-question-circle"></i></a>
           <%= f.number_field :saved_for_retirement, prepend: "$", class: 'form-control' %>
 
           <br>
@@ -18,5 +21,62 @@
       <% end %>
     </div>
 
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div id="photo-1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <h1 class="modal-title">Total Annual Income</h1>
+      <div class="modal-body">
+        <p>
+          This is the total amount of money you make in a year.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="photo-2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <h1 class="modal-title">Savings</h1>
+      <div class="modal-body">
+        <p>
+          This is the total amount of your assets you have saved away.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="photo-3" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <h1 class="modal-title">Saved For Retirement</h1>
+      <div class="modal-body">
+        <p>
+          This is the total value of assests you plan to keep for retirement, including investments.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
   </div>
 </div>

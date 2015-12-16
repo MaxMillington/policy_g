@@ -13,7 +13,7 @@ describe 'valid user' do
       fill_in 'Username', with: 'Steve'
       fill_in 'Password', with: 'steve'
       click_button 'Submit'
-      
+
       fill_in 'Total annual income', with: '100000'
       fill_in 'Savings', with: '200000'
       fill_in 'Saved for retirement', with: '50000'

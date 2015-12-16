@@ -11,15 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151216200811) do
+ActiveRecord::Schema.define(version: 20151216225313) do
 
   create_table "users", force: :cascade do |t|
     t.string  "username"
     t.text    "password_digest"
-    t.integer "total_annual_income"
-    t.integer "savings"
-    t.integer "saved_for_retirement"
     t.integer "life_insurance"
+    t.integer "total_annual_income",  default: 0
+    t.integer "savings",              default: 0
+    t.integer "saved_for_retirement", default: 0
   end
 
 end

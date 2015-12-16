@@ -1,7 +1,6 @@
 body {
     padding-top: 50px;
     font-family: Lato,Helvetica,Arial,sans-serif;
-    bacground-color: #1ABC9C
 }
 
 .image-bg-fluid-height,
@@ -25,7 +24,6 @@ body {
     background-color: #1ABC9C;
     background-size: cover;
     height: 700px;
-    width: 1000px
 }
 
 

@@ -6,7 +6,7 @@ describe 'user visits homepage' do
     it 'works with valid credentials' do
 
       User.create(username: 'Steve', password: 'steve')
-      
+
       visit root_path
       click_link 'Login'
 
@@ -14,7 +14,7 @@ describe 'user visits homepage' do
       fill_in 'Password', with: 'steve'
       click_button 'Submit'
 
-      expect(current_path).to eq(root_path)
+      expect(page).to have_content("How")
     end
 
     it 'doesnt work with invalid credentials' do

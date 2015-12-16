@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     user = User.find_by(username: params[:session][:username])
     if user && user.authenticate(params[:session][:password])
       log_in user
-      redirect_to root_path
+      redirect_to edit_user_path(user)
     else
       flash.keep[:danger] = 'Password or username is incorrect'
       render 'new'

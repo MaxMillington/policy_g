@@ -12,7 +12,7 @@ describe 'user visits homepage' do
       fill_in 'Password', with: 'password'
       click_button 'Submit'
 
-      expect(current_path).to eq(root_path)
+      expect(page).to have_content("How")
     end
 
     it 'doesnt work without a username or if username is taken' do

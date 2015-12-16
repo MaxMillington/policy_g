@@ -1,0 +1,33 @@
+<div class="container signup">
+
+  <div class="row">
+
+    <div class="col-md-3 pic-col"><br>
+      <div class="picture">
+        <%= image_tag 'https://www.policygenius.com/blog/library/uploads/2015/05/Josh-Clark.png', class: "img-responsive" %>
+      </div>
+    </div>
+    <div class="col-md-3"><br>
+      <div class="well">
+        <div class="caption-full">
+          <h3>User:</h3>
+          <p><%= @user.username %></p>
+          <h5>Total Annual Income: <%= number_to_currency(@user.total_annual_income) %></h5>
+          <h5>Savings:<%= number_to_currency(@user.savings) %> </h5>
+          <h5>Amount Saved For Retirement:<%= number_to_currency(@user.saved_for_retirement) %> </h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3"><br>
+      <div class="well ">
+        <div class="caption-full">
+          <h3>Suggested Life Insurance:</h3><br>
+              <p class="hidden">number</p><br>
+          <h5><%= @user.suggested_life_insurance %></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- /.container -->
